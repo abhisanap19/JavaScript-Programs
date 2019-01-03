@@ -23,7 +23,6 @@ function deQueue(){
         return this.s.length;
     }
 }
-
 module.exports={
     Pallindrome(str){
         var d=new deQueue();

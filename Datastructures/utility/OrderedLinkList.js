@@ -163,7 +163,7 @@ module.exports={
             return a - b;
         });
         var l = new LinkedList();
-        l.insert(arr1[0], 'head')
+        l.insert(arr1[0],'head')
         for (var i = 1; i < arr1.length; i++) {
             l.insert(arr1[i], arr1[i - 1])
         }

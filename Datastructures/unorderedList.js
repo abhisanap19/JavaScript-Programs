@@ -11,13 +11,13 @@ data= data.toString().toLocaleLowerCase().split(' ');
             to the list, and if it found then remove the word from the List. In the end save the
             list into a file.          
  * @description
- * @file    :unorderedList.js
+ * @file    : unorderedList.js
  * @overview:We read a string from file then perform linked list operations and then we search 
  *           elements from list if it is available then delete and if not available then add it.
  * @author  : Abhijeet 
  * @version : 1.0
  * @since   : 28/12/2018 
- ******************************************************************/
+ ***************************************************************************/
 
 function unorderedList()
 {

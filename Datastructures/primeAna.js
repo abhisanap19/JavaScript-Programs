@@ -4,6 +4,10 @@ let utility = require('../Datastructures/utility/Array');
 let prime = [];
 function primeAnagram() {
     let min = prompt(' Enter min value: ');
+    if(min>='a'&&min<='z'||min>='A'&&min<='Z'){
+        console.log("plz enter integers only...")
+    }
+    else{
     let max = prompt(' Enter max value: ');
     prime = utility.prime(min,max);
     let anagram = [];
@@ -40,6 +44,7 @@ function primeAnagram() {
         }
         return unique_array;
     }
+}
 }
 primeAnagram();
 

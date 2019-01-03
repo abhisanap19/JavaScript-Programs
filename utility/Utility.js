@@ -693,9 +693,6 @@ module.exports = {
             console.log("please enter integer");
         }
     },
-
-
-
     bubbleInt(arr)
     {
         for(let i=0;i<arr.length-1;i++)
@@ -711,9 +708,6 @@ module.exports = {
             }
         }
     },
-        
-
-
     bubblesortString(size)
     {
         var prompt=require('prompt-sync')();
@@ -749,9 +743,6 @@ module.exports = {
             console.log("please enter string");
         }
     },
-
-
-
     bubbleString(arr)
     {
         for(let i=0;i<arr.length-1;i++)
@@ -980,14 +971,82 @@ module.exports = {
           
     },
 
-
+    mergeSort(size)
+    {
+        var prompt=require('prompt-sync')();
+        let arr=new Array(size);
+            for(let i=0;i<size;i++)
+            {
+                arr[i]=prompt("enter elements: ");
+                
+            }
+            console.log((arr));
+            this.merge((arr));
+            arr.forEach(element =>
+                {
+                    console.log(parseInt(element));
+                });
+                process.exit();
+    },  
+    merge(arr)
+    {
+        if(arr.length==1)
+        {
+            return; 
+        }
+        var m=Math.floor(arr.length/2);
+        var a1=new Array(m);
+        var a2=new Array(arr.length-m);
+        var i;
+            for(i=0;i<a1.length;i++)
+            {
+                a1[i]=parseInt(arr[i]);
+            }
+                for(var j=0;j<a2.length;j++,i++)
+                {
+                    a2[j]=parseInt(arr[i]);
+                }
+        this.merge(a1);
+        this.merge(a2);//dividing
+        this.merger(a1,a2,arr);
+    },
+    merger(a,b,c)
+    {
+        var i=0,j=0,k=0;
+        while(i<a.length && j<b.length)
+        {
+            if(a[i]<b[j])
+            {
+                c[k]=parseInt(a[i]);
+                i++;
+                k++;
+            }
+            else
+            {
+                c[k]=parseInt(b[j]);
+                k++;
+                j++;
+            }
+        }
+        while(i<a.length)
+        {
+            c[k]=parseInt(a[i]);
+            k++;
+            i++;
+        }
+        while(j<b.length)
+        {
+            c[k]=parseInt(b[j]);
+            k++;
+            j++;
+        }
+    },
 
     Notes(amount)
     {
         var count = 0, countnotes = 0, countChange = 0;
         var notes = [1000, 500, 100, 50, 10, 5, 2, 1];
         var countNotes = [];
-    
         for (let i = 0; i < notes.length; i++) 
         {
             if (amount >= notes[i]) 
@@ -999,7 +1058,6 @@ module.exports = {
             {
                  countnotes = countnotes + countNotes[i];
             }
-    
             if (notes[i] < 10 && countNotes[i] != 0)
             {
                  countChange = countChange + countNotes[i];

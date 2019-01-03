@@ -5,9 +5,8 @@ var utility3=require('./utility/queue');
 
 let prime = [];
 let anag = [];
-function anareverseStack(){
-    
-    let min=prompt('Enter min value: ');
+function anareverseStack(){ 
+    let min=prompt('Enter min value: '); 
     let max=prompt('Enter max value: ');
     prime = utility.prime(min,max);
     let anagram = [];
@@ -37,8 +36,8 @@ function anareverseStack(){
     for (let i = 0; i < anag.length; i++) {
         linklist.add(anag[i]);
     }
-    //let res = linklist.printList();
-    //console.log(res);
+    let res = linklist.printList();
+    console.log(res);
     let queue = new utility3();
     for (let i = 0; i < anag.length; i++) {
         let temp = linklist.GetNth(i);

@@ -1,6 +1,6 @@
 var utility=require('../Datastructures/utility/Array');
 var Utility=require('../utility/Utility');
-function prime() {
+function prime(){
     var read=Utility.input();
     read.question("Enter min value: ",function(min)
     {

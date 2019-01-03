@@ -160,7 +160,6 @@ class LinkedList {
         return 0; 
     }
 }
-
 fs = require('fs');
     module.exports = {
     unorderedList(arr, ele) {
