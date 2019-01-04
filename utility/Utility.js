@@ -27,9 +27,10 @@ module.exports = {
     },
 
  /** Replace String :
-            * @param - userinput taking from user 
+            * @param -taking from user 
             * @description - it takes userinput and print the string with userinput
  */ 
+
     replace(userinput) {
         if (userinput.length >= 3){
             console.log("hello" + userinput + "! how are you?"); }
@@ -39,11 +40,14 @@ module.exports = {
      },
 
  /** Flip Coin
-           * @param - userinput taking from the user
+           * @param st,userinput taking from the user
            * @description -Use Random Function to get value between 0 and 1. If < 0.5 then tails or
            *                heads
  */
-    flipcoin(st) {
+/**p
+ * 
+ */
+ flipcoin(st) {
         let n = 0, head = 0, tail = 0;
          for (let i = 1; i <= st; i++) {
             n = Math.random();

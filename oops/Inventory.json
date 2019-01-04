@@ -1,0 +1,21 @@
+{
+    "rice":
+         [
+             {"name":"Whiterice","weight":20,"price":60},
+             {"name":"Basmati","weight":24,"price":90},
+             {"name":"brownrice","weight":30,"price":110}
+        ],
+    "pulses":
+        [
+             {"name":"Beans","weight":15,"price":45},
+             {"name":"Lentil","weight":20,"price":60},
+             {"name":"Broadbean","weight":25,"price":77}
+        ],   
+    "wheats":
+        [
+             {"name":"breadwheat","weight":22,"price":44},
+             {"name":"durum","weight":33,"price":55},
+             {"name":"ashirvad","weight":44,"price":66}
+        ]
+         
+}
