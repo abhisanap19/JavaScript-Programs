@@ -65,16 +65,16 @@ function RegularExp()
     b= /[0-9]/g;
     c=/[!@#$%^&*()<>+-/"'?]/g;
     var name = prompt("please enter your name: ");
-    if(a.test(name) && name.length >3)
+    if((a.test(name) && name.length >3) && !b.test(name))
     {
-        res= str.replace(/<<name>>/,name);
-    }else 
+        res= str.replace(/<<name>>/g,name);
+    }else
     {
         console.log("Invalid name");
         return false;
     }
     var fullname = prompt("please enter your fullname: ");
-    if(a.test(fullname) && fullname.length >3)
+    if((a.test(fullname) && fullname.length >3) && !b.test(fullname))
     {
         res1 = res.replace(/<<full name>>/,fullname);
     }else
@@ -84,7 +84,7 @@ function RegularExp()
     }
     
     var phoneno = prompt("please enter your phone no: ");
-    if(b.test(phoneno) == true && phoneno.length == 10)
+      if((b.test(phoneno) == true && phoneno.length == 10) && !a.test(name))
     {
         res2 = str1.replace(/<<9xxxxxxxxx>>/,phoneno);
         //console.log(res2);

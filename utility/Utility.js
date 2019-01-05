@@ -1,8 +1,6 @@
 var read = require('readline-sync');
 
 module.exports = {
-
-
     input() {
         var readLine = require('readline');
         var rl = readLine.createInterface({
@@ -27,8 +25,8 @@ module.exports = {
     },
 
  /** Replace String :
-            * @param -taking from user 
-            * @description - it takes userinput and print the string with userinput
+        * @param  useriput- taking from user 
+        * @description - it takes userinput and print the string with userinput
  */ 
 
     replace(userinput) {
@@ -40,14 +38,11 @@ module.exports = {
      },
 
  /** Flip Coin
-           * @param st,userinput taking from the user
-           * @description -Use Random Function to get value between 0 and 1. If < 0.5 then tails or
-           *                heads
+        * @param st,take no. of times to flip coin from user.
+        * @description -Use Random Function to get value between 0 and 1. If < 0.5 then tails or
+        *               heads.
  */
-/**p
- * 
- */
- flipcoin(st) {
+ flipcoin(st){
         let n = 0, head = 0, tail = 0;
          for (let i = 1; i <= st; i++) {
             n = Math.random();
@@ -66,11 +61,11 @@ module.exports = {
         console.log("the tail% is :" + tp + "%");
     },
 
-   /** Leap Year :
-            * @param - year taking from the user
-            * @description - Determine if it is leap year and print the year is Leap year 
-            *                 or Not
-   */
+ /** Leap Year :
+        * @param  year,take year from user
+        * @description - Determine if it is leap year and print the year is Leap year 
+        *                or Not.
+ */
      leapYear(year) {
         if (year.length == 4){
             if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
@@ -86,11 +81,10 @@ module.exports = {
     },
 
  
-    /** Power Of 2
-            * @param - userinput taking from the user
-            * @description - it will print the power values of 2 upto to the userinput given by user
-    */
-
+ /** Power Of 2
+        * @param  num,take number to find power.
+        * @description - it will print the power values of 2 upto to the userinput given by user
+ */
     findPower(num) {
           var i = 0;
           var powerOfTwo = 1;
@@ -102,27 +96,23 @@ module.exports = {
         }
     },
 
-   /** Harmonic Number
-            * @param - num taking from the user
-            * @description - it will print the Nth harmonic value
-    */
-
+ /** Harmonic Number
+        * @param N,num taking from the user
+        * @description - it will print the Nth harmonic value
+ */
     Harmonic(N) {
         var sum = 0.0;
-
         for (i = 1; i <= N; i++) {
             console.log("1/" + i + "+");
             sum += 1.0 / i;
         }
-
         console.log(sum);
     },
 
-    /** Prime Factorization
-            * @param - num taking from the user
-            * @description - print the prime factors of num
-    */
-
+ /** Prime Factorization
+        * @param  number, to find prime factors.
+        * @description - print the prime factors of num
+ */
     primeFactor(number) {
         for (let i = 2; i <= number / i; i++) {
             console.log("{i=" + i + ",number=" + number + " }");
@@ -137,12 +127,11 @@ module.exports = {
         console.log();
     },
 
-
-    /** Gambler
-            * @param - userinput,stake,goal taking from the user 
-            * @description - Play till the gambler is broke or has won
-            *                Print Number of Wins and Percentage of Win and Loss.
-    */
+ /** Gambler
+        * @param stake,@param goal,@param num, to play gamlbing and count wins and loss percentage  
+        * @description - Play till the gambler is broke or has won Print Number of Wins and Percentage
+        *                of Win and Loss.
+ */
     gambling(stake, goal, num) {
         var bets = 0;
         var wins = 0;
@@ -170,13 +159,12 @@ module.exports = {
         console.log("percentage of loss=" + 100.0 * loss / num + "%");
     },
 
-    /** Coupon Numbers
-        * @param - number taking from the user
+ /** Coupon Numbers
+        * @param n, number taking from the user to find distinct coupon.
         * @description - Given N distinct Coupon Numbers, how many random numbers do you
         *                need to generate distinct coupon number? This program simulates this random
         *                process.
-    */ 
-
+ */ 
     getCoupon(n) {
         var size = 0;
         var arr = new Array(n);
@@ -190,18 +178,14 @@ module.exports = {
                 }}
         }
     },
-
-
-    
-    /** 2D Array
-        * @param - row taking from the user
+ 
+ /** 2D Array
+        * @param row,@param coloumn, taking row and coloumn value from the user to get matrix. 
         * @description - Print function to print 2 Dimensional Array.
-    */
-
+ */
     array(row, coloumn) {
         var prompt = require('prompt-sync')();
         let arr = new Array(row);
-       // let arr1=new Array(coloumn);
         var coloumn = prompt('enter no of coloums');
         for (let i = 0; i < row; i++) {
             arr[i] = new Array(coloumn);
@@ -212,11 +196,11 @@ module.exports = {
                console.log(arr);
     },
 
-   /** Sum Of Three integers add to Zero
-           * @param - Number of elements taking from users
-           * @description - A program with cubic running time. Read in N integers and counts the
-           *                number of triples that sum to exactly 0.
-    */
+ /** Sum Of Three integers add to Zero
+        * @param arr,find the array to get triplet numbers that equlas zero.
+        * @description - A program with cubic running time. Read in N integers and counts the
+        *                number of triples that sum to exactly 0.
+ */
     getTriplets(arr) {       
         var count = 0;
         var num1 = 0;
@@ -241,23 +225,21 @@ module.exports = {
         return count;
     },
 
-    /** Distance
-            * @param - x,y taking from the user
-            * @description - takes two integer command­line arguments x
-            *                and y and prints the Euclidean distance from the point (x, y) to the origin (0, 0).
-    */
+ /** Distance
+        * @param x,@param y to find distance
+        * @description - takes two integer command­line arguments x and y and prints the Euclidean
+        *                distance from the point (x, y) to the origin (0, 0).
+ */
     getDistance(x, y) {
         var dist = Math.pow(((x * x) + (y * y)), 0.5);
         console.log("distance from (" + x + ", " + y + ") to (0, 0) = " + dist);
 
     },
 
-
-    /** Permutation
-        * @param - str taking from the user
-        * @description - to return all permutations of a string
-    */
-
+ /** Permutation
+        * @param str,to get string for permutation.
+        * @description-to return all permutations of a string.
+ */
     doPermute(str) {
         var a, z, A, Z;
         if ((str >= 'a' && str <= 'z') || (str >= 'A' && str <= 'Z')) {
@@ -283,12 +265,11 @@ module.exports = {
         }
     },
 
-   
-    /** StopWatch Program
-            * @param - startTime 1 and stopTime 0 taking as input 
-            * @description - Write a Stopwatch Program for measuring the time that elapses between
-            *                 the start and end clicks           
-    */
+ /** StopWatch Program
+        * @param startTime 1 @param stopTime 0 taking as input 
+        * @description - Write a Stopwatch Program for measuring the time that elapses between
+        *                 the start and end clicks           
+ */
      getTime()
       {   var d=new Date();
           var t=d.getTime();
@@ -302,11 +283,10 @@ module.exports = {
          
       },
 
-    /** Quadratic
-          * @param - a,b,c taking from the user 
-          * @description - Take a, b and c as input values to find the roots of x.
-    */
-
+ /** Quadratic
+        * @param a,@param b,@param c taking from the user to find roots. 
+        * @description - Take a, b and c as input values to find the roots of x.
+ */
     findRoots(a, b, c) {
         var roots1;
         var roots2;
@@ -328,15 +308,12 @@ module.exports = {
         }
     },
 
-
-    /** WindChill
-            * @param - t,v taking from the user
-            * @description - Given the temperature t (in Fahrenheit) and the wind speed v (in miles per hour),
-            *                the National Weather Service defines the effective temperature (the wind chill) to be
-            *                Note : the formula is not valid if t is larger than 50 in absolute value or if v is larger
-            *                than 120 or less than 3 (you may assume that the values you get are in that range).
-     */
-
+ /** WindChill
+        * @param t,@param v taking from the command line to find windchill.
+        * @description - Given the temperature t (in Fahrenheit) and the wind speed v (in miles per hour),
+        *                the National Weather Service defines the effective temperature (the wind chill) to be
+        *                calculated.
+ */
     findWC(t, v) {
         var t, v, w, a;
         a = Math.pow(v, 0.16);

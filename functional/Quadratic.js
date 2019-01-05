@@ -1,10 +1,12 @@
 var Utility=require('../utility/Utility.js');
-
-
-
-
-
-
+/*****************************************************************************************
+ *purpose   : To find roots of given equation.
+ * @file    : Quadratic.js
+ * @overview: To take input values of equation from user to get roots for the given equation. 
+ * @author  : Abhijeet 
+ * @version : 1.0
+ * @since   : 26/12/2018 
+ ************************************************************************************/
 function findRoots()
 {
     var read=Utility.input();

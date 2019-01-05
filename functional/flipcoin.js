@@ -1,5 +1,12 @@
 var Utility=require('../utility/Utility.js');
-
+/*****************************************************************************************
+ *purpose   : To count percentage of heads and tails.         
+ * @file    : flipcoin.js
+ * @overview: To flip a coin N no. of times and randomly generate a number and print percentage of heads and tails 
+ * @author  : Abhijeet 
+ * @version : 1.0
+ * @since   : 24/12/2018 
+ ***************************************************************************/
 function flipcoin()
 {
     var read=Utility.input();

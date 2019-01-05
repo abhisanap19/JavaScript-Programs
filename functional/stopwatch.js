@@ -1,5 +1,13 @@
 var Utility=require('../utility/Utility.js');
-
+/*****************************************************************************************
+ *purpose   : To find  elapsed time from current time.
+ * @file    : stopwatch.js
+ * @overview: To Write a Stopwatch Program for measuring the time that elapses between the start
+ *            and end clicks  
+ * @author  : Abhijeet 
+ * @version : 1.0
+ * @since   : 26/12/2018 
+ ************************************************************************************/
     var read=Utility.input();
     read.question("Press 1 to start:",function(startTime)
     { 

@@ -1,0 +1,22 @@
+{
+    "stock1":
+    {
+        "name": "facebook",
+        "no_ofshares":10,
+        "price": 1000
+    },
+    "stock2":
+    {
+        "name": "microsoft",
+        "no_ofshares": 20,
+        "price": 40000
+    },
+    "stock3":
+    {
+        "name": "Infosys",
+        "no_ofshares": 15,
+        "price": 20000
+
+    }
+
+}
