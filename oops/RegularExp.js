@@ -67,7 +67,7 @@ function RegularExp()
     var name = prompt("please enter your name: ");
     if((a.test(name) && name.length >3) && !b.test(name))
     {
-        res= str.replace(/<<name>>/g,name);
+        res= str.replace(/<<name>>/,name);
     }else
     {
         console.log("Invalid name");
@@ -84,7 +84,7 @@ function RegularExp()
     }
     
     var phoneno = prompt("please enter your phone no: ");
-      if((b.test(phoneno) == true && phoneno.length == 10) && !a.test(name))
+      if((b.test(phoneno) == true && phoneno.length == 10) && !a.test(phoneno))
     {
         res2 = str1.replace(/<<9xxxxxxxxx>>/,phoneno);
         //console.log(res2);

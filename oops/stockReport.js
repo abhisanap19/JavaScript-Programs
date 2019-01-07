@@ -1,27 +1,43 @@
+var fs = require('fs')
+var prompt = require('prompt-sync')();
+fs.readFile('stock.json', function (err, data) {
+    if (err) throw err
+    var sum=0;
+    var stocks = JSON.parse(data)
+    console.log("enter 1 to insert");
+   // console.log("enter 2 to delete");
+    var option = prompt('enter the option: ');
+    switch (parseInt(option)) {
+        case 1: var stock = prompt('enter number of stocks: ');
+            for (var i = 1; i <= stock; i++) {
+                var name = prompt('enter the name: ');
+                var number = prompt('enter the number of share: ');
+                var price = prompt('enter the price: ');
+                stocks.users.push({
+                    "name": name,
+                    "number_of_share": number,
+                    "price": price
+                })
+                console.log(stocks);
+                var num = parseInt(number * price);
+                console.log("the total price of each stock is: " + num);
+                sum = parseInt(sum + num);
+                fs.writeFile('stock.json', JSON.stringify(stocks),function(err) {
+                    if (err) throw err
+                })
+            }
+            console.log("the total price of stock is: " + sum);
+            break;
+     //    case 2:
+     //        var i = prompt('which stock u want to delete: ')
+     //        delete stocks.users.name;
+     //        console.log(stocks.users);
+     //        fs.writeFile('/home/admin1/Documents/BridgeLabzz/oops/prog4.json', JSON.stringify(stocks), function (err) {
+     //            if (err) throw err
 
-fs=require('fs');
-var Utility=require('../oops/stockReport.js');
-let data=fs.readFileSync('stock.json');
-let stock=JSON.parse(data);
-console.log(stock);
-function stockReport(){
-     var n1=stock.stock1.no_ofshares;
-     var n2=stock.stock1.price;
-     var res1=n1*n2;
-     console.log("The total stock price of "+stock.stock1.name+" is: " +res1+"$");
+     //        })
+     //        break;
 
-     var n3=stock.stock2.no_ofshares;
-     var n4=stock.stock2.price;
-     var res2=n3*n4;
-     console.log("The total stock price of "+stock.stock2.name+" is: "+res2+"$");
-
-     var n5=stock.stock3.no_ofshares;
-     var n6=stock.stock3.price;
-     var res3=n5*n6;
-     console.log("The total stock price of "+stock.stock3.name+" is: "+res3+"$");
-
-     var res4=res1+res2+res3;
-     console.log("The total stock price is: "+res4+"$");
-}
-stockReport();
+    }
+})
 
