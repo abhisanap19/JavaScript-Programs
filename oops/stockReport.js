@@ -1,3 +1,12 @@
+/*****************************************************************************************
+ *purpose   : To print the Stock Report.      
+ * @file    : stockReport.js
+ * @overview: N number of Stocks, for Each Stock Read In the Share Name, Number of Share, and Share
+ *            Price and calculate for each stock and total stock value.
+ * @author  : Abhijeet 
+ * @version : 1.0
+ * @since   : 04/01/2019 
+ ************************************************************************************/
 var fs = require('fs')
 var prompt = require('prompt-sync')();
 fs.readFile('stock.json', function (err, data) {
@@ -5,7 +14,6 @@ fs.readFile('stock.json', function (err, data) {
     var sum=0;
     var stocks = JSON.parse(data)
     console.log("enter 1 to insert");
-   // console.log("enter 2 to delete");
     var option = prompt('enter the option: ');
     switch (parseInt(option)) {
         case 1: var stock = prompt('enter number of stocks: ');
@@ -28,16 +36,6 @@ fs.readFile('stock.json', function (err, data) {
             }
             console.log("the total price of stock is: " + sum);
             break;
-     //    case 2:
-     //        var i = prompt('which stock u want to delete: ')
-     //        delete stocks.users.name;
-     //        console.log(stocks.users);
-     //        fs.writeFile('/home/admin1/Documents/BridgeLabzz/oops/prog4.json', JSON.stringify(stocks), function (err) {
-     //            if (err) throw err
-
-     //        })
-     //        break;
-
     }
 })
 

@@ -1,4 +1,12 @@
-
+/*****************************************************************************************
+ *purpose   : To create the JSON from Inventory Object and output the JSON String       
+ * @file    : InventoryDM.js
+ * @overview: Create a JSON file having Inventory Details for Rice, Pulses and Wheats with properties
+ *            name, weight, price per kg.Then read Json file and calculate value of each inventory.
+ * @author  : Abhijeet 
+ * @version : 1.0
+ * @since   : 03/01/2019 
+ ************************************************************************************/
 var fs = require('fs');
 var prompt = require('prompt-sync')();
 let rawdata = fs.readFileSync('Inventory.json');  

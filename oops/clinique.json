@@ -1,0 +1,58 @@
+{
+    "Doctors": [
+        {
+            "Name": "Dr.Adams",
+            "ID": 103,
+            "Specialization": "Allergists",
+            "Availability": "Both"
+        },
+        {
+            "Name": "Dr.Smith",
+            "ID": 101,
+            "Specialization": "psychiatrist",
+            "Availability": "PM"
+        },
+        {
+            "Name": "Dr.White",
+            "ID": 102,
+            "Specialization": "Cardiologist",
+            "Availability": "AM"
+        },
+        {
+            "Name": "Dr.Black",
+            "ID": 104,
+            "Specialization": "Surgeon",
+            "Availability": "PM"
+        }
+    ],
+    "Patients": [
+        {
+            "Name": "Sam",
+            "ID": 305,
+            "mobNo": 9881726855,
+            "Age": 39,
+            "Appointed_To": "Dr.Adams"
+        },
+        {
+            "Name": "abhi",
+            "ID": 960,
+            "mobNo": "9881726855",
+            "Age": "23",
+            "Appointed_To": "Dr.Smith"
+        },
+        {
+            "Name": "abhijeet",
+            "ID": 572,
+            "mobNo": "9881725364",
+            "Age": "33",
+            "Appointed_To": "Dr.White"
+        },
+        {
+            "Name": "sapna",
+            "ID": 393,
+            "mobNo": "8237267462",
+            "Age": "33",
+            "Appointed_To": "Dr.Black"
+        }
+    ]
+}
