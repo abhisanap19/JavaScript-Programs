@@ -23,6 +23,12 @@
             "ID": 104,
             "Specialization": "Surgeon",
             "Availability": "PM"
+        },
+        {
+            "Name": "Dr.Satyam",
+            "ID": 105,
+            "Specialization": "Pediatrician",
+            "Availability": "Both"
         }
     ],
     "Patients": [
@@ -41,18 +47,25 @@
             "Appointed_To": "Dr.Smith"
         },
         {
-            "Name": "abhijeet",
-            "ID": 572,
-            "mobNo": "9881725364",
-            "Age": "33",
-            "Appointed_To": "Dr.White"
-        },
-        {
             "Name": "sapna",
             "ID": 393,
             "mobNo": "8237267462",
             "Age": "33",
             "Appointed_To": "Dr.Black"
+        },
+        {
+            "Name": "honey",
+            "ID": 65,
+            "mobNo": "8735263536",
+            "Age": "24",
+            "Appointed_To": "Dr.White"
+        },
+        {
+            "Name": "sachin",
+            "ID": 378,
+            "mobNo": "9881425365",
+            "Age": "21",
+            "Appointed_To": "Dr.Adams"
         }
     ]
 }

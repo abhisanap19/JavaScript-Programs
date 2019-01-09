@@ -1,1 +1,24 @@
-{"users":[null,{"name":"demo","number_of_share":20,"price":20000},{"name":"apple","number_of_share":"22","price":"1000"},{"name":"microsoft","number_of_share":"40","price":"1000"}]}
+{
+    "users": [
+        {
+            "name": "microsoft",
+            "number_of_share": "23",
+            "price": "1000"
+        },
+        {
+            "name": "apple",
+            "number_of_share": "22",
+            "price": "2000"
+        },
+        {
+            "name": "hcl",
+            "number_of_share": "23",
+            "price": "500"
+        },
+        {
+            "name": "infosys",
+            "number_of_share": "23",
+            "price": "3000"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "Person": [
+        {
+            "Name": "abhi",
+            "LastName": "sanap",
+            "Address": {
+                "Street": "23",
+                "City": "puneri",
+                "State": "maharashras",
+                "Nation": "indian",
+                "Zip": "443204",
+                "PhoneNum": "9881726855"
+            }
+        },
+        {
+            "Name": "dipak",
+            "LastName": "waghmode",
+            "Address": {
+                "Street": "23",
+                "City": "nagpur",
+                "State": "mahrashra",
+                "Nation": "indian",
+                "Zip": "342562",
+                "PhoneNum": "8756245346"
+            }
+        },
+        {
+            "Name": "sapna",
+            "LastName": "patil",
+            "Address": {
+                "Street": "21",
+                "City": "kolkata",
+                "State": "westbengal",
+                "Nation": "indian",
+                "Zip": "453627",
+                "PhoneNum": "9872536542"
+            }
+        },
+        {
+            "Name": "vishal",
+            "LastName": "wagh",
+            "Address": {
+                "Street": "12",
+                "City": "nashik",
+                "State": "maharshra",
+                "Nation": "indian",
+                "Zip": "435267",
+                "PhoneNum": "9881724356"
+            }
+        }
+    ]
+}
