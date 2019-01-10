@@ -20,7 +20,6 @@ for (var i = 0; i < arr2.length; i++)
             arr3[arr1.length*i + j] = arr2[i] + " of " + arr1[j];
     }
 }
-
 function shuffle()
 {
     for (var i = 0; i < n; i++) 
@@ -31,7 +30,6 @@ function shuffle()
         arr3[i] = temp;
     }
 }
-
 //for Adding cards in arr3  
 for (var j = 0; j < 9; j++)
 {
@@ -42,8 +40,6 @@ for (var j = 0; j < 9; j++)
         queue.enQueue(arr);
         i++;
 }
-
-
 console.log("Cards receieved by Person 1-");
 shuffle();
 for (var j = 0; j < 9; j++)
@@ -58,8 +54,6 @@ for (var j = 0; j < 9; j++)
         console.log(arr);
        
 }
-
-
 console.log("Cards receieved by Person 2-");
 shuffle();
 for (var j = 0; j < 9; j++)
@@ -70,10 +64,8 @@ for (var j = 0; j < 9; j++)
         var queue2 = new utilityQueue();
         queue2.enQueue(arr);
         i++;
-        console.log(arr);
-        
-}
-    
+        console.log(arr);       
+}  
 console.log("Cards receieved by Person 3-");
 shuffle();
 for (var j = 0; j < 9; j++)
@@ -86,7 +78,6 @@ for (var j = 0; j < 9; j++)
         i++;
         console.log(arr);
 }
-
 //remaining cards given to the 4th person
 console.log("Cards receieved by Person 4-");
 shuffle();

@@ -57,10 +57,10 @@ class Address {
         }
         var zip = prompt("Zip code: ");
         //zip code validation that should not exceed length 6
-        if (contactRestriction.test(zip) == false || zip.lenght != 6) {
-            console.log("Invalid zip code!");
-            return false;
-        }
+        // if (contactRestriction.test(zip) == false || zip.lenght != 6) {
+        //     console.log("Invalid zip code!");
+        //     return false;
+        // }
 
         var phoneNum = prompt("Phone number: ");
         if (contactRestriction.test(phoneNum) == false || phoneNum.length != 10) {

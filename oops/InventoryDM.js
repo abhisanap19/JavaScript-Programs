@@ -11,7 +11,6 @@
 var fs = require('fs');
 var prompt = require('prompt-sync')();
 var utility=require('../oops/InventoryDM');
-
 /**
  * To create a JSON file having Inventory Details for Rice, Pulses and Wheats with properties
  * name, weight, price per kg.Then read Json file and calculate value of each inventory.
